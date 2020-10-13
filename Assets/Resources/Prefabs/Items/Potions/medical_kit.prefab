@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000011284371128}
+  m_IsPrefabParent: 1
+--- !u!1 &1000011284371128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011511039084}
+  - 114: {fileID: 114000012152612108}
+  - 114: {fileID: 114000013133078460}
+  - 65: {fileID: 65000010223963332}
+  m_Layer: 0
+  m_Name: medical_kit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000011511039084
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011284371128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!65 &65000010223963332
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011284371128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.2084432, y: 0.8, z: 0.275}
+--- !u!114 &114000012152612108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011284371128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95bb797f77394c54b887bf97df462c8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: medical_kit
+  Sprite: {fileID: 21300000, guid: 1cde1d2f37f8f72449d0984b9b809d07, type: 3}
+  Model: {fileID: 1000012301207484, guid: 45698b07d5bffaa45b6241736e144476, type: 2}
+  Description:
+    Name: Medical Kit
+    Common: 
+  ItemType: 3
+  Stack:
+    CurrentNormalized: 0.033333335
+    Maximum: 30
+  CraftRecipe:
+    ProducedQuantity: 1
+    Resources:
+    - Prefab: {fileID: 114000013264863086, guid: 4a38de4d1d467a241a02ee54fc8ccd59,
+        type: 2}
+      Count: 1
+  Skill: {fileID: 114000013457823992, guid: 7484f5a7f7da06a48b0e4e062c7bc1f0, type: 2}
+--- !u!114 &114000013133078460
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011284371128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388aefaafee4abe4cb6cab2fa1428d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 180
+  Duration: 10
+  Speed: {x: 0, y: -0.08, z: 0}

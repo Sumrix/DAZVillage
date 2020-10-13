@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012594227094}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012594227094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013130412384}
+  - 114: {fileID: 114000013336876196}
+  - 114: {fileID: 114000011127244614}
+  - 65: {fileID: 65000013780004256}
+  m_Layer: 0
+  m_Name: armor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013130412384
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012594227094}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!65 &65000013780004256
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012594227094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.2084432, y: 0.8, z: 0.275}
+--- !u!114 &114000011127244614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012594227094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388aefaafee4abe4cb6cab2fa1428d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 180
+  Duration: 10
+  Speed: {x: 0, y: -0.08, z: 0}
+--- !u!114 &114000013336876196
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012594227094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9790ddbc16e19134c9b59b600826f3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: armor
+  Sprite: {fileID: 21300000, guid: becc1c551bbd8c94f892ebc61c00711f, type: 3}
+  Model: {fileID: 1000012301207484, guid: 45698b07d5bffaa45b6241736e144476, type: 2}
+  Description:
+    Name: Body armor
+    Common: Lightweight and flexible, leather vest would likely have provided the
+      right balance to many Vikings.
+  ItemType: 0
+  Stack:
+    CurrentNormalized: 1
+    Maximum: 1
+  CraftRecipe:
+    ProducedQuantity: 1
+    Resources:
+    - Prefab: {fileID: 114000014289426912, guid: 4c6727f27b5383149987d437304ff10a,
+        type: 2}
+      Count: 1
+  EquipmentType: 2
+  ImproveRecipe:
+  - Prefab: {fileID: 114000013962733156, guid: 522aa56edfd250441a44b18e78602df4, type: 2}
+    Count: 1
+  Stats:
+    Result:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    Level: 1
+    _base:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    Bonus:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    _levelBonus:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    Main:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+  Bonus:
+    Result:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 0
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+    Level: 1
+    _base:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 1
+        Maximum: 200
+        Regen: 0
+      Damage: 0
+      Armor: 2
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+    Bonus:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 0
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+    _levelBonus:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 1
+        Maximum: 100
+        Regen: 0
+      Damage: 0
+      Armor: 1
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+    Main:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 0
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0

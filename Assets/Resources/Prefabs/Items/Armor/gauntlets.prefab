@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010023852752}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010023852752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012435086340}
+  - 114: {fileID: 114000010949641554}
+  - 114: {fileID: 114000013255532030}
+  - 65: {fileID: 65000013242617022}
+  m_Layer: 0
+  m_Name: gauntlets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012435086340
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010023852752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!65 &65000013242617022
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010023852752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.2084432, y: 0.8, z: 0.275}
+--- !u!114 &114000010949641554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010023852752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9790ddbc16e19134c9b59b600826f3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: gauntlets
+  Sprite: {fileID: 21300000, guid: 2bac4d76f417ae74884531271207db60, type: 3}
+  Model: {fileID: 1000012301207484, guid: 45698b07d5bffaa45b6241736e144476, type: 2}
+  Description:
+    Name: Black Leather Gauntlets
+    Common: The Leather Gauntlets feature long-cuff construction seen throughout the
+      ages these supple, leather gauntlets are soft to allow easy gripping of your
+      sword or tankard.
+  ItemType: 0
+  Stack:
+    CurrentNormalized: 1
+    Maximum: 1
+  CraftRecipe:
+    ProducedQuantity: 1
+    Resources:
+    - Prefab: {fileID: 114000014289426912, guid: 4c6727f27b5383149987d437304ff10a,
+        type: 2}
+      Count: 1
+  EquipmentType: 3
+  ImproveRecipe:
+  - Prefab: {fileID: 114000013962733156, guid: 522aa56edfd250441a44b18e78602df4, type: 2}
+    Count: 1
+  Stats:
+    Result:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    Level: 1
+    _base:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    Bonus:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    _levelBonus:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+    Main:
+      Durability:
+        CurrentNormalized: 0
+        Maximum: 0
+  Bonus:
+    Result:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 0
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+    Level: 1
+    _base:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 5
+      Armor: 1.7
+      MoveSpeed: 0
+      IAS: 30
+      Evasion: 0
+      Accuracy: 0
+    Bonus:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 0
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+    _levelBonus:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 1
+      MoveSpeed: 0
+      IAS: 15
+      Evasion: 0
+      Accuracy: 0
+    Main:
+      Strength: 0
+      Agility: 0
+      Intelligence: 0
+      Health:
+        CurrentNormalized: 0
+        Maximum: 0
+        Regen: 0
+      Damage: 0
+      Armor: 0
+      MoveSpeed: 0
+      IAS: 0
+      Evasion: 0
+      Accuracy: 0
+--- !u!114 &114000013255532030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010023852752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388aefaafee4abe4cb6cab2fa1428d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 180
+  Duration: 10
+  Speed: {x: 0, y: -0.08, z: 0}

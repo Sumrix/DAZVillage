@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010147412380}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010147412380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012254951410}
+  - 114: {fileID: 114000013256023140}
+  - 114: {fileID: 114000011835315402}
+  - 65: {fileID: 65000012398331484}
+  m_Layer: 0
+  m_Name: wood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000012254951410
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010147412380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!65 &65000012398331484
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010147412380}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0.2084432, y: 0.8, z: 0.275}
+--- !u!114 &114000011835315402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010147412380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 388aefaafee4abe4cb6cab2fa1428d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Delay: 180
+  Duration: 10
+  Speed: {x: 0, y: -0.08, z: 0}
+--- !u!114 &114000013256023140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010147412380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d29cd9ece9b7664b9cc0bdad21874f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ID: wood
+  Sprite: {fileID: 21300000, guid: 539c36c11d8818448856f0431ade43cb, type: 3}
+  Model: {fileID: 1000012301207484, guid: 45698b07d5bffaa45b6241736e144476, type: 2}
+  Description:
+    Name: Wood
+    Common: 'Wood, or log, is a naturally occurring block found in trees, primarily
+      used to create wood planks. It comes in six species: oak, birch, spruce, jungle,
+      dark oak, and acacia.'
+  ItemType: 3
+  Stack:
+    CurrentNormalized: 0.03333334
+    Maximum: 30
+  CraftRecipe:
+    ProducedQuantity: 1
+    Resources: []
